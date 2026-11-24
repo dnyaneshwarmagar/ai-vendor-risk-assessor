@@ -1,0 +1,32 @@
+# secrets — never commit
+.env
+**/.env
+*.key
+other_three_sub_projects/**/.venv/
+other_three_sub_projects/**/runs/
+
+# python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+*.egg-info/
+
+# run outputs (keep showcase markdown reports tracked)
+runs/
+logs/
+memory/
+reports/*
+!reports/*.md
+data/*.sqlite3
+data/langgraph_checkpoints.sqlite
+cached_pages/*
+!cached_pages/README.md
+!cached_pages/**/*.md
+
+# editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

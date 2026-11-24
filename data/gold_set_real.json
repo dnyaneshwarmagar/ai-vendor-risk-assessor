@@ -1,0 +1,194 @@
+{
+  "_about": "Hand-checked gold for TEN real vendors (Milestone 6). Facts are public-trust-centre seeds — re-verify dates and URLs before production scoring. Do not let the agent fill this file.",
+  "as_of": "2026-11-01",
+  "cases": [
+    {
+      "id": "real-notion",
+      "question": "Can our product team use Notion AI for roadmap docs?",
+      "vendor": "Notion",
+      "official_domain": "notion.so",
+      "tier": "T2",
+      "users": 12,
+      "user_groups": ["public", "employees", "security"],
+      "checked_on": "2026-11-01",
+      "expected_facts": {
+        "security_certifications": {"has": ["SOC 2 Type II"], "evidence_level": "documented", "best_source": "https://www.notion.com/security"},
+        "data_regions": {"available": ["United States"], "india_available": false},
+        "trains_on_customer_data": "no_on_paid_plans",
+        "sso_saml": "paid_plans",
+        "dpa_available": "yes"
+      },
+      "expected_overall_hint": "CONDITIONAL/READY depending on PROC-1.1",
+      "notes": "Clear pass-leaning T2 candidate if AVL updated."
+    },
+    {
+      "id": "real-openai",
+      "question": "Can support use ChatGPT Enterprise for ticket drafts?",
+      "vendor": "OpenAI",
+      "official_domain": "openai.com",
+      "tier": "T3",
+      "users": 40,
+      "user_groups": ["public", "employees", "security"],
+      "checked_on": "2026-11-01",
+      "expected_facts": {
+        "security_certifications": {"has": ["SOC 2 Type II"], "evidence_level": "documented", "best_source": "https://trust.openai.com/"},
+        "data_regions": {"india_available": false},
+        "trains_on_customer_data": "no",
+        "sso_saml": "paid_plans",
+        "dpa_available": "yes"
+      },
+      "expected_overall_hint": "BLOCKED on DP-3.1 for T3 unless India region contracted",
+      "notes": "Fail-leaning on residency for Nimbu Mart T3."
+    },
+    {
+      "id": "real-deepl",
+      "question": "Can support use DeepL Pro for customer email translation?",
+      "vendor": "DeepL",
+      "official_domain": "deepl.com",
+      "tier": "T3",
+      "users": 25,
+      "user_groups": ["public", "employees", "security"],
+      "checked_on": "2026-11-01",
+      "expected_facts": {
+        "security_certifications": {"has": ["ISO 27001", "SOC 2 Type II"], "evidence_level": "documented", "best_source": "https://www.deepl.com/pro-security"},
+        "data_regions": {"available": ["European Union"], "india_available": false},
+        "trains_on_customer_data": "no",
+        "sso_saml": "paid_plans",
+        "dpa_available": "yes"
+      },
+      "expected_overall_hint": "BLOCKED/CONDITIONAL on DP-3.1",
+      "notes": "Fail-leaning residency; strong certs."
+    },
+    {
+      "id": "real-slack",
+      "question": "Can engineering use Slack for internal incident chat?",
+      "vendor": "Slack",
+      "official_domain": "slack.com",
+      "tier": "T2",
+      "users": 80,
+      "user_groups": ["public", "employees", "security"],
+      "checked_on": "2026-11-01",
+      "expected_facts": {
+        "security_certifications": {"has": ["SOC 2 Type II", "ISO 27001"], "evidence_level": "documented", "best_source": "https://slack.com/security"},
+        "data_regions": {"india_available": false},
+        "trains_on_customer_data": "no",
+        "sso_saml": "paid_plans",
+        "dpa_available": "yes"
+      },
+      "expected_overall_hint": "READY/CONDITIONAL for T2",
+      "notes": "Pass-leaning internal collab tool."
+    },
+    {
+      "id": "real-zoom",
+      "question": "Can HR use Zoom for customer-facing interviews?",
+      "vendor": "Zoom",
+      "official_domain": "zoom.us",
+      "tier": "T3",
+      "users": 15,
+      "user_groups": ["public", "employees", "security"],
+      "checked_on": "2026-11-01",
+      "expected_facts": {
+        "security_certifications": {"has": ["SOC 2 Type II"], "evidence_level": "documented", "best_source": "https://www.zoom.com/en/trust/"},
+        "data_regions": {"india_available": true},
+        "trains_on_customer_data": "no",
+        "sso_saml": "paid_plans",
+        "dpa_available": "yes"
+      },
+      "expected_overall_hint": "CONDITIONAL — confirm India region enabled on the contract",
+      "notes": "Messy: region options vary by plan."
+    },
+    {
+      "id": "real-github",
+      "question": "Can eng use GitHub Copilot Business on private repos?",
+      "vendor": "GitHub",
+      "official_domain": "github.com",
+      "tier": "T2",
+      "users": 50,
+      "user_groups": ["public", "employees", "security"],
+      "checked_on": "2026-11-01",
+      "expected_facts": {
+        "security_certifications": {"has": ["SOC 2 Type II", "ISO 27001"], "evidence_level": "documented", "best_source": "https://github.com/security"},
+        "trains_on_customer_data": "no_on_paid_plans",
+        "sso_saml": "paid_plans",
+        "dpa_available": "yes"
+      },
+      "expected_overall_hint": "CONDITIONAL — confirm Business/Enterprise training defaults",
+      "notes": "Messy: consumer vs Business training policies differ."
+    },
+    {
+      "id": "real-atlassian",
+      "question": "Can support use Jira Service Management with customer tickets?",
+      "vendor": "Atlassian",
+      "official_domain": "atlassian.com",
+      "tier": "T3",
+      "users": 30,
+      "user_groups": ["public", "employees", "security"],
+      "checked_on": "2026-11-01",
+      "expected_facts": {
+        "security_certifications": {"has": ["SOC 2 Type II", "ISO 27001"], "evidence_level": "documented", "best_source": "https://www.atlassian.com/trust"},
+        "data_regions": {"india_available": false},
+        "trains_on_customer_data": "no",
+        "sso_saml": "paid_plans",
+        "dpa_available": "yes"
+      },
+      "expected_overall_hint": "BLOCKED on DP-3.1 unless India region available for the product",
+      "notes": "Fail-leaning residency for T3."
+    },
+    {
+      "id": "real-grammarly",
+      "question": "Can marketing use Grammarly Business on customer email drafts?",
+      "vendor": "Grammarly",
+      "official_domain": "grammarly.com",
+      "tier": "T3",
+      "users": 10,
+      "user_groups": ["public", "employees", "security"],
+      "checked_on": "2026-11-01",
+      "expected_facts": {
+        "security_certifications": {"has": ["SOC 2 Type II"], "evidence_level": "documented", "best_source": "https://www.grammarly.com/security"},
+        "data_regions": {"india_available": false},
+        "trains_on_customer_data": "no_on_paid_plans",
+        "sso_saml": "paid_plans",
+        "dpa_available": "yes"
+      },
+      "expected_overall_hint": "BLOCKED/CONDITIONAL — residency + confirm Business no-training",
+      "notes": "Messy: free vs Business training defaults."
+    },
+    {
+      "id": "real-box",
+      "question": "Can legal use Box for customer contract storage?",
+      "vendor": "Box",
+      "official_domain": "box.com",
+      "tier": "T3",
+      "users": 8,
+      "user_groups": ["public", "employees", "security"],
+      "checked_on": "2026-11-01",
+      "expected_facts": {
+        "security_certifications": {"has": ["SOC 2 Type II", "ISO 27001"], "evidence_level": "documented", "best_source": "https://www.box.com/security"},
+        "data_regions": {"india_available": false},
+        "trains_on_customer_data": "no",
+        "sso_saml": "all_plans",
+        "dpa_available": "yes"
+      },
+      "expected_overall_hint": "BLOCKED on DP-3.1 unless India zone selected",
+      "notes": "Fail-leaning residency; strong enterprise controls."
+    },
+    {
+      "id": "real-miro",
+      "question": "Can design use Miro for internal workshop boards?",
+      "vendor": "Miro",
+      "official_domain": "miro.com",
+      "tier": "T2",
+      "users": 20,
+      "user_groups": ["public", "employees", "security"],
+      "checked_on": "2026-11-01",
+      "expected_facts": {
+        "security_certifications": {"has": ["SOC 2 Type II", "ISO 27001"], "evidence_level": "documented", "best_source": "https://miro.com/trust/"},
+        "trains_on_customer_data": "no_on_paid_plans",
+        "sso_saml": "paid_plans",
+        "dpa_available": "yes"
+      },
+      "expected_overall_hint": "READY/CONDITIONAL for T2 internal",
+      "notes": "Pass-leaning internal collaboration."
+    }
+  ]
+}

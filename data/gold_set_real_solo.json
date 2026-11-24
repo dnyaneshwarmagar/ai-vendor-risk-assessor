@@ -1,0 +1,76 @@
+{
+  "_about": "Solo FAQ path: three hand-checked real vendors for resume/capstone scoring. Re-verify public trust pages before treating as production truth. Do not let the agent fill this file.",
+  "as_of": "2026-11-01",
+  "checked_by": "portfolio-builder",
+  "cases": [
+    {
+      "id": "real-notion",
+      "question": "Can our product team use Notion AI for roadmap docs?",
+      "vendor": "Notion",
+      "official_domain": "notion.so",
+      "tier": "T2",
+      "users": 12,
+      "user_groups": ["public", "employees", "security"],
+      "checked_on": "2026-11-01",
+      "sources_reviewed": [
+        "https://www.notion.com/security",
+        "https://www.notion.com/trust"
+      ],
+      "expected_facts": {
+        "security_certifications": {"has": ["SOC 2 Type II"], "evidence_level": "documented"},
+        "data_regions": {"india_available": false},
+        "trains_on_customer_data": "no_on_paid_plans",
+        "sso_saml": "paid_plans",
+        "dpa_available": "yes"
+      },
+      "expected_overall_hint": "CONDITIONAL/READY depending on PROC-1.1",
+      "notes": "T2 pass-leaning if AVL covers Notion."
+    },
+    {
+      "id": "real-openai",
+      "question": "Can support use ChatGPT Enterprise for ticket drafts?",
+      "vendor": "OpenAI",
+      "official_domain": "openai.com",
+      "tier": "T3",
+      "users": 40,
+      "user_groups": ["public", "employees", "security"],
+      "checked_on": "2026-11-01",
+      "sources_reviewed": [
+        "https://trust.openai.com/",
+        "https://openai.com/enterprise-privacy/"
+      ],
+      "expected_facts": {
+        "security_certifications": {"has": ["SOC 2 Type II"], "evidence_level": "documented"},
+        "data_regions": {"india_available": false},
+        "trains_on_customer_data": "no",
+        "sso_saml": "paid_plans",
+        "dpa_available": "yes"
+      },
+      "expected_overall_hint": "BLOCKED on DP-3.1 for T3 unless India region contracted",
+      "notes": "Residency fail-leaning for India-first T3."
+    },
+    {
+      "id": "real-deepl",
+      "question": "Can support use DeepL Pro for customer email translation?",
+      "vendor": "DeepL",
+      "official_domain": "deepl.com",
+      "tier": "T3",
+      "users": 25,
+      "user_groups": ["public", "employees", "security"],
+      "checked_on": "2026-11-01",
+      "sources_reviewed": [
+        "https://www.deepl.com/pro-security",
+        "https://www.deepl.com/privacy"
+      ],
+      "expected_facts": {
+        "security_certifications": {"has": ["ISO 27001", "SOC 2 Type II"], "evidence_level": "documented"},
+        "data_regions": {"india_available": false},
+        "trains_on_customer_data": "no",
+        "sso_saml": "paid_plans",
+        "dpa_available": "yes"
+      },
+      "expected_overall_hint": "BLOCKED/CONDITIONAL on DP-3.1",
+      "notes": "Strong certs; residency still fail-leaning for India T3."
+    }
+  ]
+}
