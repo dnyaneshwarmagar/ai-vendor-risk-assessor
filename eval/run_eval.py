@@ -17,10 +17,9 @@ Usage
   python eval/run_eval.py                 # full scorecard, writes reports/eval_report.md
   python eval/run_eval.py --strict        # exit code 1 if any threshold fails (for CI)
 
-LEARNER TODO — Milestone 6
-  * Add an LLM-as-judge metric for the *reasons* (are they faithful to the evidence?) — Deep Search Lab 11.
-  * Add your real-vendor gold set (data/gold_set_real.json) and run live; keep the fictional one for CI.
-  * Run an ablation: switch the identity gate off and watch the UK company's ISO certificate leak in.
+Milestone 6: LLM-as-judge (`eval/llm_judge.py`, `eval/run_ragas_eval.py`),
+real-vendor gold (`data/gold_set_real_solo.json` + `eval/run_real_eval.py`),
+ablations (`eval/run_ablations.py`). Fictional gold stays the CI gate.
 """
 
 from __future__ import annotations

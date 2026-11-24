@@ -24,7 +24,8 @@
 | Real-vendor solo gold (Notion, OpenAI, DeepL) | **15/15 fields (100%)** hand-verified ≥80% target |
 | Product | FastAPI + Streamlit; **BLOCKED cannot be approved** |
 
-Reports: [`reports/eval_report.md`](reports/eval_report.md) · [`reports/eval_report_real.md`](reports/eval_report_real.md) · [`reports/ablation_report.md`](reports/ablation_report.md)
+Reports: [`reports/eval_report.md`](reports/eval_report.md) · [`reports/eval_report_real.md`](reports/eval_report_real.md) · [`reports/ablation_report.md`](reports/ablation_report.md)  
+Milestones M0–M6: [`docs/MILESTONES.md`](docs/MILESTONES.md)
 
 ---
 
