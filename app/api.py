@@ -28,7 +28,7 @@ from assessor.store import groups_for_role
 app = FastAPI(
     title="Nimbu Mart Vendor Risk Assessor",
     version="0.6.0",
-    description="Capstone by Shivank Agrawal. Assessments are inputs to a human decision. DI via AppContainer.",
+    description="AI Vendor Risk Assessor. Assessments are inputs to a human decision. DI via AppContainer.",
 )
 
 _APP = get_container()

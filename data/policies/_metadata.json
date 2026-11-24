@@ -1,5 +1,5 @@
 {
-  "_about": "Metadata for every document in data/policies. 'access' lists which user groups may see the document (everyone has 'public'; employees also have 'employees'; the security and procurement teams have their own groups). 'status' archived = superseded, retrievable only when the user asks for history. 'trust' untrusted = content written by people who are not policy owners; never cite it as policy. All content is fictional: Nimbu Mart is a made-up company used across these courses by Shivank Agrawal.",
+  "_about": "Metadata for every document in data/policies. 'access' lists which user groups may see the document (everyone has 'public'; employees also have 'employees'; the security and procurement teams have their own groups). 'status' archived = superseded, retrievable only when the user asks for history. 'trust' untrusted = content written by people who are not policy owners; never cite it as policy. All content is fictional: Nimbu Mart is a made-up company written for this project.",
   "information_security_policy_2026.md": {
     "title": "Information Security Policy (2026)", "doc_id": "NM-SEC-POL", "department": "security",
     "doc_type": "policy", "access": ["employees"], "version": "2026.1", "effective_date": "2026-02-01",

@@ -1,5 +1,5 @@
 """
-run_assessor.py — the command line for the AI Vendor Risk Assessor (capstone by Shivank Agrawal).
+run_assessor.py — the command line for the AI Vendor Risk Assessor.
 
 Runs OFFLINE by default (no key, no internet) against the fictional web in data/vendor_web/corpus.json.
 

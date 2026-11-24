@@ -133,7 +133,7 @@ CLI / FastAPI / Streamlit
 
 ## Attribution
 
-Capstone brief inspired by **Shivank Agrawal · Future with Shivank** (see `Capstone-AI-Vendor-Risk-Assessor-Shivank-Agrawal.html`). Course kit sources stay local/untracked (`other_three_sub_projects/`). Implementation, packaging, and evaluation in this repository are by **Dnyaneshwar Magar**.
+Built and packaged by **Dnyaneshwar Magar**. Capstone brief: [`Capstone-AI-Vendor-Risk-Assessor.html`](Capstone-AI-Vendor-Risk-Assessor.html). Local course-kit copies (if present) stay untracked under `other_three_sub_projects/`.
 
 Fictional vendors/policies in `data/` are course-written. Real-vendor gold in `data/gold_set_real_solo.json` is hand-checked against public pages — re-verify before production use.
 
