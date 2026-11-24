@@ -2,32 +2,69 @@
 .env
 **/.env
 *.key
-other_three_sub_projects/**/.venv/
-other_three_sub_projects/**/runs/
+*.pem
+credentials.json
+**/secrets.toml
+
+# course kits (reference only; not needed to run this project)
+other_three_sub_projects/
 
 # python
 __pycache__/
 *.py[cod]
+*$py.class
+.Python
 .venv/
 venv/
+env/
 .pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
 *.egg-info/
+dist/
+build/
+*.egg
+pip-wheel-metadata/
 
-# run outputs (keep showcase markdown reports tracked)
+# run / local outputs
 runs/
 logs/
 memory/
-reports/*
-!reports/*.md
+*.log
+*.sqlite3
+*.db
 data/*.sqlite3
 data/langgraph_checkpoints.sqlite
-# allow markdown caches; ignore bulky raw HTML dumps
+
+# reports: keep showcase markdown; ignore regenerable / weak judge dumps
+reports/*
+!reports/*.md
+reports/ragas_report.md
+reports/llm_judge_report.md
+
+# cached live pages: keep markdown notes; ignore bulky dumps
 cached_pages/**/*.html
 cached_pages/**/*.htm
 cached_pages/**/*.pdf
+cached_pages/**/*.json
+cached_pages/**/*.bin
 
-# editors / OS
+# editors / OS / tooling
 .vscode/
 .idea/
+.cursor/
+*.swp
+*.swo
 .DS_Store
 Thumbs.db
+desktop.ini
+
+# notebooks / misc
+.ipynb_checkpoints/
+*.tmp
+*.bak
+*.orig
