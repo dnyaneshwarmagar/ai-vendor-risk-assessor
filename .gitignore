@@ -21,9 +21,10 @@ reports/*
 !reports/*.md
 data/*.sqlite3
 data/langgraph_checkpoints.sqlite
-cached_pages/*
-!cached_pages/README.md
-!cached_pages/**/*.md
+# allow markdown caches; ignore bulky raw HTML dumps
+cached_pages/**/*.html
+cached_pages/**/*.htm
+cached_pages/**/*.pdf
 
 # editors / OS
 .vscode/
